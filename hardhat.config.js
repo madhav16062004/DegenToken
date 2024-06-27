@@ -1,13 +1,13 @@
 require("@nomicfoundation/hardhat-toolbox");
 require('dotenv').config();
 
-const FORK_FUJI = false;
-const FORK_MAINNET = false;
+const FORK_FUJI = true;
+const FORK_MAINNET = true;
 let forkingData = undefined;
 
 if (FORK_MAINNET) {
   forkingData = {
-    url: "https://api.avax.network/ext/bc/C/rpcc",
+    url: "https://api.avax.network/ext/bc/C/rpc",
   };
 }
 if (FORK_FUJI) {
