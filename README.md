@@ -1,41 +1,47 @@
-# Project Title
+# Degen Token ETH+AVAX DGN game
 
-Simple overview of use/purpose.
+* Minting new tokens
+* Transferring Tokens
+* Redeeming tokens
+* checking token balance
+* Burn tokens
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+This project is a smart contract coded in soldity which succesfully implements the use of mint,transfer,redeeming,checking token balance,burn tokens function. It includes basic functionalities for transfering, minting,burning and redeeming the tokens allowing the user to manage the account in the game. the person can use ingame store to purchase some DGN stuff. This smart contract can be deployed on the fuji and avalanche mainet network. 
+
 
 ## Getting Started
 
-### Installing
+### Installing and executing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
+* Clone the repository from Github
+* paste your api and wallet address in the hardhat.config.js
+* Then run the given commands
 ```
-code blocks for commands
+//to deploy the project
+npx hardhat run scripts/deploy.js --network fuji
+
+// to check the deployed project
+npx hardhat verify <contract address> --network fuji
 ```
+* open https://testnet.snowtrace.io/ and paste the contract address in the search bar
+* Open Remix online editor (https://remix.ethereum.org/)
+* connect your wallet to the remix and deploy the project
+
 
 ## Help
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+For any issues, you can refer to the Remix documentation or common Ethereum development resources.
 
 ## Authors
 
 Contributors names and contact info
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+Madhav Goyal  
+[@22BCS15140] (madhavkkp@gmail.com)
 
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the LICENSE.md file for details
